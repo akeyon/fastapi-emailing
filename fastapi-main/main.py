@@ -1,16 +1,15 @@
-from fastapi import FastAPI,HTTPException
+from fastapi import FastAPI
 from pydantic import BaseModel
-
-# from . import emailTemplate
 
 app = FastAPI()
 
 class Msg(BaseModel):
     msg: str
 
+
 @app.get("/")
 async def root():
-    return {"message": "Hello Woeld World. Welcome to FastAPI!"}
+    return {"message": "Hello World. Welcome to FastAPI!"}
 
 
 @app.get("/path")
