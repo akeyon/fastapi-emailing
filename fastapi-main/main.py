@@ -14,8 +14,7 @@ class Msg(BaseModel):
 #  Email template
 
 
-with open(r'C:\Users\HP\OneDrive\Documents\projects\HRMS\venv\banner.jpg', 'rb') as image_file:
-    encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+
     
 email_template = """
 <!DOCTYPE html>
